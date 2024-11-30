@@ -4,6 +4,7 @@ This module registers the Task model in the Django admin panel
 and customizes its display options.
 """
 from django.contrib import admin
+
 from .models import Task
 
 
