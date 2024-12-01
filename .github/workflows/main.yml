@@ -1,19 +1,23 @@
-name: Main Taski workflow
+name: Taski main workflow
 
 on:
   push:
     branches:
       - main
+    ...
 
 jobs:
+    # Запустить тестирование приложения
   tests:
     runs-on: ubuntu-latest
     steps:
-
-build_and_push_to_docker_hub:
+      - ...
+  # Собрать и отправить образ приложения на Docker Hub
+  build_and_push_to_docker_hub:
     runs-on: ubuntu-latest
     needs: tests  # Не выполнять сразу, ждать, пока выполнится tests
     steps:
+      - ... 
   
     # Блок services аналогичен docker-compose.yml
     services:
