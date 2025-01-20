@@ -1,8 +1,7 @@
 """Django settings for the project."""
 
-import os
 from pathlib import Path
-from environs import env
+from environs import env  # flake8: noqa
 
 env.read_env()
 
