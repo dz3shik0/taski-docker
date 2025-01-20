@@ -1,4 +1,5 @@
 """Django settings for the project."""
+
 from pathlib import Path
 from environs import env  # flake8: noqa
 
